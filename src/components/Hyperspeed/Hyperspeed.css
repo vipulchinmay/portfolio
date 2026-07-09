@@ -1,0 +1,17 @@
+#lights {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2; /* Set to -2 to stack under the grid overlay (-1) and page content (0+) */
+  pointer-events: none; /* Let all click events pass through to content */
+  background: transparent;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
